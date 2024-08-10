@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: sans-serif;
+
+}
+
+a,
+button,
+input {
+    border: none;
+}
+
+body {
+    background: linear-gradient(45deg, #3fafdc, #6eed27b5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 0.7rem;
+    overflow: hidden;
+    border-bottom: 3px dashed #787878;
+}
+
+.search input {
+    padding: 0.5rem 1rem;
+    width: 300px;
+    background: #171c2a;
+    color: #fff;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+body>p {
+    font-size: small;
+    font-weight: bold;
+    color: #3f3f3f;
+    padding: .3rem;
+    pointer-events: none;
+    font-family: Helvetica;
+    text-transform: uppercase;
+}
+
+#boxContenar {
+    background: #171c2a;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
+    color: white;
+}
+
+#boxContenar::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* nothing todo */
+.emptyMsg {
+    display: none;
+    text-align: center;
+    font-size: x-large;
+    color: #df3f43;
+    font-weight: bold;
+    font-style: italic;
+    padding: 1rem 0;
+}
+
+/* open the input fill's */
+.showForm {
+    display: flex !important;
+}
+
+.addForm {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+    z-index: 222;
+    top: 0;
+    left: 0;
+}
+
+.formContend {
+    background: #1c202d;
+    display: grid;
+    padding: 25px;
+    border-radius: 5px;
+    position: relative;
+    border: 2px solid #fff;
+    z-index: 999 !important;
+}
+
+p.removeBtn {
+    position: absolute;
+    background: indianred;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 25px;
+    margin: -5px;
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    right: 0;
+    top: 0;
+}
+
+.removeBtn:hover {
+    transform: rotate(135deg);
+}
+
+.formContend input {
+    padding: .7rem .6rem;
+    width: 250px;
+    margin-bottom: .8rem;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.formContend button {
+    padding: .5rem 1.5rem;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 100px;
+    background: #3cbd69;
+}
+
+.formContend button:hover {
+    background: #3cbd69d0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn .updeat {
+    background: #1079dc;
+}
+
+.btn .updeat:hover {
+    background: #085fb2;
+}
+
+.hiddeUpdeatBtn {
+    background: #073e73 !important;
+    pointer-events: none;
+}
+
+.hiddeAddBtn {
+    background: #297745d0 !important;
+    pointer-events: none;
+}
+
+.heading {
+    background: #171c2a;
+    position: sticky;
+    padding-bottom: .7rem;
+    top: 0;
+    left: 0;
+}
+
+.heading>h2 {
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.addBtn {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+#addDataInfo {
+    background: #3cbd69;
+    position: relative;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 111;
+}
+
+#addDataInfo:hover {
+    transform: rotate(90deg);
+}
+
+/* table data */
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table thead tr th,
+table tbody tr td {
+    padding: 5px 8px;
+}
+
+table tbody tr td:nth-child(2) {
+    text-transform: capitalize;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+    text-align: center;
+    padding: 0;
+}
+
+.inputPws {
+    max-width: 90px;
+    overflow: hidden;
+}
+
+.inputPws input {
+    width: 100%;
+    background: #171c2a;
+    color: #fff;
+    font-size: 17px;
+}
+
+.infoBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.infoBtn button {
+    padding: 4px 10px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.infoBtn button:first-child {
+    background: #1079dc;
+    color: #fff;
+}
+
+.infoBtn button:last-child {
+    background: #e22b30;
+    color: #fff;
+}
+
+table thead {
+    background: #333341;
+}
+
+.showInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem 1rem;
+    flex-direction: column;
+}
+
+/* responcive css writing in the this website. */
+@media (max-width:768px) {
+
+    .showInfo button,
+    .showInfo input,
+    .showInfo table {
+        font-size: 80%;
+    }
+
+    table thead tr th:first-child,
+    table tbody tr td:first-child {
+        display: none;
+    }
+}

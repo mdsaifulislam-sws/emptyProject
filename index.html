@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage - Account's Password</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="boxContenar">
+        <!-- add your password info form box -->
+        <div class="addForm">
+            <div class="formContend">
+                <!-- remove button -->
+                <p class="removeBtn">+</p>
+
+                <!-- input filld's -->
+                <label>Name:</label>
+                <input class="name" type="text" placeholder="Name">
+
+                <label>Username / Phone:</label>
+                <input class="phone" type="text" placeholder="Username Or Phone">
+
+                <label>Email:</label>
+                <input class="email" type="email" placeholder="Email">
+
+                <label>Password:</label>
+                <input class="pws" type="password" name="password" placeholder="Password">
+
+                <input type="text" hidden value="" class="hiddenInput">
+
+                <!-- submit button -->
+                <div class="btn">
+                    <button class="addData">ADD</button>
+                    <button class="addData updeat">UPDEAT</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2>Storage a Password</h2>
+            <div class="addBtn">
+                <button id="addDataInfo">+</button>
+            </div>
+            <div class="search">
+                <input type="text/search" placeholder="Search your data...">
+            </div>
+        </div>
+        <!-- display your adding massage -->
+        <div class="showInfo">
+
+            <table border="1px solid">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Username / Phone</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="tableBody">
+                    <tr id="tableRow">
+                        <td>9</td>
+                        <td>freelancer</td>
+                        <td>01797333444</td>
+                        <td>mdsaiful.sws@gmail.com</td>
+                        <td class="inputPws"><input type="password" value="333444" readonly=""></td>
+                        <td>
+                            <div class="infoBtn">
+                                <button class="editBtn">Edit</button>
+                                <button class="showBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </button>
+                                <button class="dltBtn">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="tableRow">
+                        <td>10</td>
+                        <td>Facebook</td>
+                        <td>01797111222</td>
+                        <td>mdsaiful.sws@gmail.com</td>
+                        <td class="inputPws"><input type="password" value="111222" readonly=""></td>
+                        <td>
+                            <div class="infoBtn">
+                                <button class="editBtn">Edit</button>
+                                <button class="showBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </button>
+                                <button class="dltBtn">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="emptyMsg">Your table is empty, adding something !</p>
+        </div>
+    </div>
+
+    <p>&copy; System Web Software (sws) 🤫. All rights reserved, privacy policy.</p>
+
+
+    <!-- open the input form box -->
+    <script>
+        function open() {
+            // add class
+            document.querySelector("#addDataInfo").addEventListener("click", () => {
+                document.querySelector(".addForm").classList.add("showForm");
+            });
+
+            // remove class
+            document.querySelector(".removeBtn").addEventListener("click", () => {
+                document.querySelector(".addForm").classList.remove("showForm");
+            });
+        }
+
+        // function
+        open();
+    </script>
+</body>
+
+</html>
