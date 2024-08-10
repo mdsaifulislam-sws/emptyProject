@@ -4,8 +4,8 @@
 
 ## UI Images:
 
-![Form](Ui-design/img/index-html-look-of-form.png)<center>_Form-UI_</center>
-![Body](Ui-design/img/index-html-look-of-home%20.png)<center>_Home-UI_</center>
+![Form](https://github.com/mdsaifulislamsws/PasswordStorageApp/blob/main/img/index-html-look-of-form.png)<center>_Form-UI_</center>
+![Body](https://github.com/mdsaifulislamsws/PasswordStorageApp/blob/main/img/index-html-look-of-home.png)<center>_Home-UI_</center>
 
 ## Social link
 
